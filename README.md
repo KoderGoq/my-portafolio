@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio Personal - Fernando Aguilar
 
-## Getting Started
+Portafolio web profesional construido con Next.js 16, TypeScript, Tailwind CSS v4 y next-themes.
 
-First, run the development server:
+## Estructura del Proyecto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+my-portafolio/
+├── app/
+│   ├── layout.tsx          # Layout principal con ThemeProvider
+│   ├── page.tsx            # Página principal (Home)
+│   └── globals.css         # Estilos globales y animaciones
+├── components/
+│   ├── ui/                 # Componentes UI reutilizables
+│   │   ├── theme-toggle.tsx
+│   │   ├── download-button.tsx
+│   │   ├── stat-card.tsx
+│   │   ├── tech-card.tsx
+│   │   └── index.ts
+│   ├── sections/           # Secciones de la página
+│   │   ├── hero-section.tsx
+│   │   ├── tech-stack-section.tsx
+│   │   ├── projects-section.tsx
+│   │   ├── experience-education-section.tsx
+│   │   ├── cta-section.tsx
+│   │   ├── footer.tsx
+│   │   └── index.ts
+│   └── providers/          # Providers (Theme, etc.)
+│       ├── theme-provider.tsx
+│       └── index.ts
+├── lib/
+│   ├── types/              # Definiciones TypeScript
+│   │   └── index.ts
+│   └── constants/          # Constantes y datos
+│       ├── personal-info.ts
+│       ├── tech-stack.ts
+│       ├── projects.ts
+│       ├── experience.ts
+│       ├── education.ts
+│       ├── stats.ts
+│       └── index.ts
+└── public/
+    └── Fernando-Aguilar-Full-Stack-Developer.pdf
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 16 (App Router)
+- **Lenguaje**: TypeScript
+- **Estilos**: Tailwind CSS v4
+- **Tema**: next-themes (Dark/Light mode)
+- **Iconos**: 
+  - lucide-react (UI icons)
+  - react-icons (Tech stack icons)
+- **Fuentes**: Geist Sans & Geist Mono
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Características
 
-## Learn More
+- ✅ **Completamente tipado** con TypeScript
+- ✅ **Modo oscuro/claro** con next-themes
+- ✅ **Iconos oficiales** de tecnologías (react-icons)
+- ✅ **Componentes reutilizables** y modulares
+- ✅ **Responsive design** (Mobile-first)
+- ✅ **Animaciones suaves** con CSS
+- ✅ **Estructura organizada** por carpetas
+- ✅ **Optimizado para impresión** (CV en PDF)
 
-To learn more about Next.js, take a look at the following resources:
+## Instalación
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Instalar dependencias
+pnpm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Ejecutar en desarrollo
+pnpm dev
 
-## Deploy on Vercel
+# Compilar para producción
+pnpm build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Ejecutar en producción
+pnpm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Personalización
+
+### Información Personal
+Edita `/lib/constants/personal-info.ts` para actualizar tu información.
+
+### Stack Tecnológico
+Edita `/lib/constants/tech-stack.ts` para agregar/modificar tecnologías.
+
+### Proyectos
+Edita `/lib/constants/projects.ts` para agregar tus proyectos.
+
+### Experiencia
+Edita `/lib/constants/experience.ts` para actualizar tu experiencia laboral.
+
+### Educación
+Edita `/lib/constants/education.ts` para agregar tu formación académica.
+
+## Mejores Prácticas Implementadas
+
+1. **Separación de responsabilidades**: Componentes, tipos, constantes y secciones separados
+2. **TypeScript estricto**: Todo tipado con interfaces claras
+3. **Componentes reutilizables**: UI components que se pueden usar en múltiples lugares
+4. **Constantes centralizadas**: Datos organizados en archivos de constantes
+5. **Next.js 16**: Uso de Server Components y Client Components apropiadamente
+6. **Tailwind v4**: Uso de las nuevas clases `bg-linear-to-*`
+7. **next-themes**: Manejo de tema con hidratación correcta
+8. **Iconos oficiales**: Uso de react-icons para logos de tecnologías reales
+
+## Licencia
+
+© 2025 Fernando Aguilar. Todos los derechos reservados.
+
