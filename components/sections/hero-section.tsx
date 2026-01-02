@@ -28,17 +28,17 @@ export function HeroSection({ isDark }: HeroSectionProps) {
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-4 md:space-y-6 mb-8 md:mb-12">
             <div>
-              <p className={`text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 md:mb-3 ${isDark ? 'text-blue-400' : 'text-blue-600'
+              <p className={`text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 md:mb-3 ${isDark ? 'text-slate-400' : 'text-slate-600'
                 }`}>
                 {PERSONAL_INFO.role}
               </p>
-              <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 md:mb-4 ${isDark ? 'text-white' : 'text-slate-900'
+              <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-3 md:mb-4 ${isDark ? 'text-slate-100' : 'text-slate-900'
                 }`}>
                 {PERSONAL_INFO.name}
               </h1>
               <div className={`h-1 w-16 sm:w-20 md:w-24 mx-auto rounded-full ${isDark
-                ? 'bg-linear-to-r from-blue-500 to-violet-500'
-                : 'bg-linear-to-r from-blue-600 to-violet-600'
+                ? 'bg-linear-to-r from-slate-600 to-slate-400'
+                : 'bg-linear-to-r from-slate-400 to-slate-600'
                 }`}></div>
             </div>
 
@@ -52,36 +52,36 @@ export function HeroSection({ isDark }: HeroSectionProps) {
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-10 md:mb-16 px-4">
             <a
               href={`mailto:${PERSONAL_INFO.email}`}
-              className={`group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl transition-all hover:scale-105 ${isDark ? 'glass hover:bg-slate-800/50' : 'glass-light hover:bg-white'
+              className={`group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl transition-all hover:scale-105 cursor-pointer ${isDark ? 'glass hover:bg-slate-800/50' : 'glass-light hover:bg-white'
                 } shadow-lg text-sm md:text-base`}
             >
-              <Mail size={16} className={`sm:w-4.5 sm:h-4.5 ${isDark ? 'text-blue-400' : 'text-blue-600'}`} />
-              <span className={`font-medium ${isDark ? 'text-slate-200' : 'text-slate-700'}`}>Email</span>
+              <Mail size={16} className={`sm:w-4.5 sm:h-4.5 ${isDark ? 'text-slate-400' : 'text-slate-600'}`} />
+              <span className={`font-medium ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>Email</span>
             </a>
             <a
               href={PERSONAL_INFO.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl transition-all hover:scale-105 ${isDark ? 'glass hover:bg-slate-800/50' : 'glass-light hover:bg-white'
+              className={`group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl transition-all hover:scale-105 cursor-pointer ${isDark ? 'glass hover:bg-slate-800/50' : 'glass-light hover:bg-white'
                 } shadow-lg text-sm md:text-base`}
             >
-              <Linkedin size={16} className={`sm:w-4.5 sm:h-4.5 ${isDark ? 'text-blue-400' : 'text-blue-600'}`} />
-              <span className={`font-medium ${isDark ? 'text-slate-200' : 'text-slate-700'}`}>LinkedIn</span>
+              <Linkedin size={16} className={`sm:w-4.5 sm:h-4.5 ${isDark ? 'text-slate-400' : 'text-slate-600'}`} />
+              <span className={`font-medium ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>LinkedIn</span>
             </a>
             <a
               href={PERSONAL_INFO.github}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl transition-all hover:scale-105 ${isDark ? 'glass hover:bg-slate-800/50' : 'glass-light hover:bg-white'
+              className={`group flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl transition-all hover:scale-105 cursor-pointer ${isDark ? 'glass hover:bg-slate-800/50' : 'glass-light hover:bg-white'
                 } shadow-lg text-sm md:text-base`}
             >
-              <Github size={16} className={`sm:w-4.5 sm:h-4.5 ${isDark ? 'text-blue-400' : 'text-blue-600'}`} />
-              <span className={`font-medium ${isDark ? 'text-slate-200' : 'text-slate-700'}`}>GitHub</span>
+              <Github size={16} className={`sm:w-4.5 sm:h-4.5 ${isDark ? 'text-slate-400' : 'text-slate-600'}`} />
+              <span className={`font-medium ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>GitHub</span>
             </a>
             <div className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl ${isDark ? 'glass' : 'glass-light'
               } shadow-lg text-sm md:text-base`}>
-              <MapPin size={16} className={`sm:w-4.5 sm:h-4.5 ${isDark ? 'text-emerald-400' : 'text-emerald-600'}`} />
-              <span className={`font-medium ${isDark ? 'text-slate-200' : 'text-slate-700'}`}>
+              <MapPin size={16} className={`sm:w-4.5 sm:h-4.5 ${isDark ? 'text-slate-400' : 'text-slate-600'}`} />
+              <span className={`font-medium ${isDark ? 'text-slate-300' : 'text-slate-700'}`}>
                 {PERSONAL_INFO.location}
               </span>
             </div>

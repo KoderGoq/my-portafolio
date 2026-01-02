@@ -30,10 +30,10 @@ export function TechCard({ tech, isDark, index }: TechCardProps) {
           <Icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
         </div>
         <div className="text-center">
-          <div className={`text-xs sm:text-sm font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>
+          <div className={`text-xs sm:text-sm font-bold ${isDark ? 'text-slate-100' : 'text-slate-900'}`}>
             {tech.name}
           </div>
-          <div className={`text-[10px] sm:text-xs mt-0.5 md:mt-1 ${isDark ? 'text-slate-500' : 'text-slate-500'}`}>
+          <div className={`text-[10px] sm:text-xs mt-0.5 md:mt-1 ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
             {tech.category}
           </div>
         </div>

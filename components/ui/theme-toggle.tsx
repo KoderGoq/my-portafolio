@@ -28,8 +28,8 @@ export function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(isDark ? 'light' : 'dark')}
-      className={`p-2 md:p-3 rounded-full shadow-lg backdrop-blur-sm transition-all hover:scale-110 ${isDark
-        ? 'bg-slate-800/80 text-yellow-400 hover:bg-slate-700'
+      className={`p-2 md:p-3 rounded-full shadow-lg backdrop-blur-sm transition-all hover:scale-110 cursor-pointer ${isDark
+        ? 'bg-slate-800/80 text-slate-300 hover:bg-slate-700'
         : 'bg-white/80 text-slate-700 hover:bg-white'
         }`}
       aria-label="Toggle theme"

@@ -15,9 +15,9 @@ export function ExperienceEducationSection({ isDark }: ExperienceEducationSectio
           {/* Experience */}
           <div>
             <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-              <Briefcase className={`w-5 h-5 sm:w-6 sm:h-6 ${isDark ? 'text-blue-400' : 'text-blue-600'
+              <Briefcase className={`w-5 h-5 sm:w-6 sm:h-6 ${isDark ? 'text-slate-400' : 'text-slate-600'
                 }`} />
-              <h2 className={`text-2xl sm:text-3xl font-bold ${isDark ? 'text-white' : 'text-slate-900'
+              <h2 className={`text-2xl sm:text-3xl font-bold ${isDark ? 'text-slate-100' : 'text-slate-900'
                 }`}>
                 Experiencia
               </h2>
@@ -32,19 +32,19 @@ export function ExperienceEducationSection({ isDark }: ExperienceEducationSectio
                 >
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                     <div>
-                      <h3 className={`text-lg sm:text-xl font-bold ${isDark ? 'text-white' : 'text-slate-900'
+                      <h3 className={`text-lg sm:text-xl font-bold ${isDark ? 'text-slate-100' : 'text-slate-900'
                         }`}>
                         {exp.title}
                       </h3>
-                      <p className={`font-semibold ${isDark ? 'text-blue-400' : 'text-blue-600'
+                      <p className={`font-semibold ${isDark ? 'text-slate-400' : 'text-slate-600'
                         }`}>
                         {exp.company}
                       </p>
                     </div>
                     {exp.isCurrent && (
                       <span className={`text-xs sm:text-sm px-3 py-1 rounded-full self-start ${isDark
-                          ? 'bg-emerald-500/20 text-emerald-400'
-                          : 'bg-emerald-100 text-emerald-700'
+                        ? 'bg-emerald-500/20 text-emerald-400'
+                        : 'bg-emerald-100 text-emerald-700'
                         }`}>
                         Actual
                       </span>
@@ -57,7 +57,7 @@ export function ExperienceEducationSection({ isDark }: ExperienceEducationSectio
                   <div className="space-y-1.5 sm:space-y-2">
                     {exp.highlights.map((item, j) => (
                       <div key={j} className="flex gap-2 text-xs sm:text-sm">
-                        <Sparkles size={12} className={`shrink-0 mt-1 sm:w-3.5 sm:h-3.5 ${isDark ? 'text-blue-400' : 'text-blue-600'
+                        <Sparkles size={12} className={`shrink-0 mt-1 sm:w-3.5 sm:h-3.5 ${isDark ? 'text-slate-400' : 'text-slate-600'
                           }`} />
                         <span className={isDark ? 'text-slate-300' : 'text-slate-700'}>
                           {item}
@@ -73,9 +73,9 @@ export function ExperienceEducationSection({ isDark }: ExperienceEducationSectio
           {/* Education */}
           <div>
             <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-              <GraduationCap className={`w-5 h-5 sm:w-6 sm:h-6 ${isDark ? 'text-blue-400' : 'text-blue-600'
+              <GraduationCap className={`w-5 h-5 sm:w-6 sm:h-6 ${isDark ? 'text-slate-400' : 'text-slate-600'
                 }`} />
-              <h2 className={`text-2xl sm:text-3xl font-bold ${isDark ? 'text-white' : 'text-slate-900'
+              <h2 className={`text-2xl sm:text-3xl font-bold ${isDark ? 'text-slate-100' : 'text-slate-900'
                 }`}>
                 Educación
               </h2>
@@ -88,11 +88,11 @@ export function ExperienceEducationSection({ isDark }: ExperienceEducationSectio
                   className={`p-5 sm:p-6 rounded-xl md:rounded-2xl ${isDark ? 'bg-slate-900/50' : 'bg-white'
                     } shadow-lg`}
                 >
-                  <div className={`text-xs sm:text-sm font-semibold mb-2 sm:mb-3 ${isDark ? 'text-blue-400' : 'text-blue-600'
+                  <div className={`text-xs sm:text-sm font-semibold mb-2 sm:mb-3 ${isDark ? 'text-slate-400' : 'text-slate-600'
                     }`}>
                     {edu.startDate} - {edu.endDate}
                   </div>
-                  <h3 className={`text-lg sm:text-xl font-bold mb-2 ${isDark ? 'text-white' : 'text-slate-900'
+                  <h3 className={`text-lg sm:text-xl font-bold mb-2 ${isDark ? 'text-slate-100' : 'text-slate-900'
                     }`}>
                     {edu.degree}
                   </h3>

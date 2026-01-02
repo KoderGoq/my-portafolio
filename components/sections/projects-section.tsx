@@ -21,17 +21,13 @@ function ProjectCard({ project, isDark, featured }: { project: Project; isDark: 
           alt={project.title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
         />
-        <div className={`absolute inset-0 bg-linear-to-t ${isDark
-          ? 'from-slate-800 via-slate-800/50 to-transparent'
-          : 'from-gray-50 via-gray-50/50 to-transparent'
-          }`}></div>
 
         {/* Featured Badge */}
         {featured && (
           <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
             <div className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-bold backdrop-blur-sm ${isDark
-              ? 'bg-blue-500/20 text-blue-300 border border-blue-400/30'
-              : 'bg-blue-500/20 text-blue-700 border border-blue-500/30'
+              ? 'bg-slate-700/90 text-slate-100 border border-slate-600'
+              : 'bg-slate-800/90 text-white border border-slate-700'
               }`}>
               Featured
             </div>
@@ -41,11 +37,11 @@ function ProjectCard({ project, isDark, featured }: { project: Project; isDark: 
 
       <div className="p-5 sm:p-6 md:p-8">
         <div className="mb-4">
-          <p className={`text-xs sm:text-sm font-semibold mb-2 ${isDark ? 'text-blue-400' : 'text-blue-600'
+          <p className={`text-xs sm:text-sm font-semibold mb-2 ${isDark ? 'text-slate-400' : 'text-slate-600'
             }`}>
             {project.subtitle}
           </p>
-          <h3 className={`text-xl sm:text-2xl font-bold mb-2 md:mb-3 ${isDark ? 'text-white' : 'text-slate-900'
+          <h3 className={`text-xl sm:text-2xl font-bold mb-2 md:mb-3 ${isDark ? 'text-slate-100' : 'text-slate-900'
             }`}>
             {project.title}
           </h3>
@@ -80,7 +76,7 @@ function ProjectCard({ project, isDark, featured }: { project: Project; isDark: 
         <div className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-6">
           {project.highlights.slice(0, 3).map((highlight, j) => (
             <div key={j} className="flex gap-2 text-xs sm:text-sm">
-              <ChevronRight size={14} className={`shrink-0 mt-0.5 sm:w-4 sm:h-4 ${isDark ? 'text-emerald-400' : 'text-emerald-600'
+              <ChevronRight size={14} className={`shrink-0 mt-0.5 sm:w-4 sm:h-4 ${isDark ? 'text-slate-400' : 'text-slate-600'
                 }`} />
               <span className={isDark ? 'text-slate-300' : 'text-slate-700'}>{highlight}</span>
             </div>
@@ -94,9 +90,9 @@ function ProjectCard({ project, isDark, featured }: { project: Project; isDark: 
             const Icon = metric.icon;
             return (
               <div key={j} className="text-center">
-                <Icon className={`w-4 h-4 sm:w-5 sm:h-5 mx-auto mb-1 sm:mb-2 ${isDark ? 'text-blue-400' : 'text-blue-600'
+                <Icon className={`w-4 h-4 sm:w-5 sm:h-5 mx-auto mb-1 sm:mb-2 ${isDark ? 'text-slate-400' : 'text-slate-600'
                   }`} />
-                <div className={`text-base sm:text-lg font-bold mb-0.5 sm:mb-1 ${isDark ? 'text-white' : 'text-slate-900'
+                <div className={`text-base sm:text-lg font-bold mb-0.5 sm:mb-1 ${isDark ? 'text-slate-100' : 'text-slate-900'
                   }`}>
                   {metric.value}
                 </div>
@@ -121,11 +117,11 @@ export function ProjectsSection({ isDark }: ProjectsSectionProps) {
     <div className={`py-12 sm:py-16 md:py-20 lg:py-24 ${isDark ? 'bg-slate-900' : 'bg-white'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-10 md:mb-16">
-          <p className={`text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 md:mb-3 ${isDark ? 'text-blue-400' : 'text-blue-600'
+          <p className={`text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 md:mb-3 ${isDark ? 'text-slate-400' : 'text-slate-600'
             }`}>
             Portfolio
           </p>
-          <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 ${isDark ? 'text-white' : 'text-slate-900'
+          <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 ${isDark ? 'text-slate-100' : 'text-slate-900'
             }`}>
             Proyectos Destacados
           </h2>
