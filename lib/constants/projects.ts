@@ -3,7 +3,7 @@ import type { Project } from '@/lib/types';
 
 export const PROJECTS: Project[] = [
   {
-    title: 'aliA Platform',
+    title: 'al1A Platform',
     subtitle: 'AI-Powered Talent Development',
     description: 'Plataforma empresarial de salud organizacional con análisis de comportamiento mediante IA y cumplimiento NOM-035',
     image: '/alia.png',

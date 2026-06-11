@@ -7,5 +7,5 @@ export const PERSONAL_INFO = {
   bio: 'Creando soluciones digitales de alto rendimiento con Next.js, arquitecturas de microservicios e integración de IA. Maestro en Tecnologías de Internet.',
   linkedin: 'https://linkedin.com/in/KoderGoq',
   github: 'https://github.com/KoderGoq',
-  cvPath: '/Fernando-Aguilar-Full-Stack-Developer.pdf'
+  cvPath: '/Fernando_Aguilar_CV.pdf'
 } as const;

@@ -42,7 +42,7 @@ export function DownloadButton() {
 
     const link = document.createElement('a');
     link.href = PERSONAL_INFO.cvPath;
-    link.download = 'Fernando-Aguilar-FullStack-Developer.pdf';
+    link.download = 'Fernando_Aguilar_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -64,8 +64,8 @@ export function DownloadButton() {
       onClick={handleDownload}
       disabled={isDownloading}
       className={`px-3 md:px-5 py-2 md:py-3 rounded-full shadow-lg backdrop-blur-sm flex items-center gap-1 md:gap-2 transition-all hover:scale-105 cursor-pointer ${isDark
-          ? 'bg-slate-800/80 text-slate-300 hover:bg-slate-700'
-          : 'bg-white/80 text-slate-700 hover:bg-white'
+        ? 'bg-slate-800/80 text-slate-300 hover:bg-slate-700'
+        : 'bg-white/80 text-slate-700 hover:bg-white'
         } ${isDownloading ? 'opacity-70 cursor-wait' : ''} ${downloadStatus === 'downloaded' ? 'bg-green-600/80 text-white' : ''}`}
     >
       <Download size={16} className={`md:w-4.5 md:h-4.5 ${isDownloading ? 'animate-bounce' : ''}`} />

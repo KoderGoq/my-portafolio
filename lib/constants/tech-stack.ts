@@ -12,7 +12,8 @@ import {
   SiPrisma,
   SiSupabase,
   SiCloudflare,
-  SiOpenai
+  SiOpenai,
+  SiPython
 } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import type { TechStack } from '@/lib/types';
@@ -113,5 +114,11 @@ export const TECH_STACK: TechStack[] = [
     icon: SiOpenai,
     category: 'API',
     color: '#8B5CF6'
+  },
+  {
+    name: 'Python',
+    icon: SiPython,
+    category: 'Language',
+    color: '#4B8BBE'
   }
 ];
