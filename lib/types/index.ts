@@ -4,7 +4,7 @@ import { IconType } from 'react-icons';
 export interface TechStack {
   name: string;
   icon: IconType;
-  category: 'Frontend' | 'Backend' | 'Database' | 'DevOps' | 'Mobile' | 'Language';
+  category: 'Frontend' | 'Backend' | 'Database' | 'DevOps' | 'Mobile' | 'Language' | 'API' | 'Storage';
   color: string;
 }
 

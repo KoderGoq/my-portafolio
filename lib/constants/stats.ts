@@ -4,7 +4,7 @@ import type { Stat } from '@/lib/types';
 export const STATS: Stat[] = [
   {
     label: 'Proyectos',
-    value: '10+',
+    value: '20+',
     icon: Code,
     color: 'emerald'
   },
@@ -16,13 +16,13 @@ export const STATS: Stat[] = [
   },
   {
     label: 'Experiencia',
-    value: '2+',
+    value: '4+',
     icon: Calendar,
     color: 'blue'
   },
   {
     label: 'Clientes',
-    value: '5+',
+    value: '10+',
     icon: Users,
     color: 'amber'
   }

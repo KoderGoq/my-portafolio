@@ -9,7 +9,10 @@ import {
   SiExpress,
   SiDocker,
   SiRedis,
-  SiPrisma
+  SiPrisma,
+  SiSupabase,
+  SiCloudflare,
+  SiOpenai
 } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 import type { TechStack } from '@/lib/types';
@@ -25,7 +28,7 @@ export const TECH_STACK: TechStack[] = [
     name: 'Next.js',
     icon: SiNextdotjs,
     category: 'Frontend',
-    color: '#000000'
+    color: '#6B7280'
   },
   {
     name: 'TypeScript',
@@ -85,6 +88,30 @@ export const TECH_STACK: TechStack[] = [
     name: 'Express',
     icon: SiExpress,
     category: 'Backend',
-    color: '#000000'
+    color: '#6B7280'
+  },
+  {
+    name: 'Supabase',
+    icon: SiSupabase,
+    category: 'Database',
+    color: '#3ECF8E'
+  },
+  {
+    name: 'Cloudflare',
+    icon: SiCloudflare,
+    category: 'DevOps',
+    color: '#F48120'
+  },
+  {
+    name: 'Cloudflare R2',
+    icon: SiCloudflare,
+    category: 'Storage',
+    color: '#F48120'
+  },
+  {
+    name: 'Groq AI',
+    icon: SiOpenai,
+    category: 'API',
+    color: '#8B5CF6'
   }
 ];

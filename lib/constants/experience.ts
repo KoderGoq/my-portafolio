@@ -22,22 +22,41 @@ export const EXPERIENCE: Experience[] = [
     ]
   },
   {
-    title: 'Freelancer Front-End',
-    company: 'Digital Kiosk Project',
-    location: 'Colima, México',
-    startDate: '2023',
-    endDate: '2025',
+    title: 'Freelancer Full Stack',
+    company: 'DOK Imagen Dental',
+    location: 'Manzanillo, Col',
+    startDate: '01/2026',
+    endDate: '04/2026',
     isCurrent: false,
-    description: 'Desarrollo de sistema de autoservicio para fast food con gestión de pedidos en tiempo real',
+    description: 'Desarrollo de plataforma web para clínicas dentales con gestión de pacientes y estudios radiológicos',
     highlights: [
-      'Eficiencia +40%',
-      'Conversión +25%',
-      'Errores -95%'
+      'Multi-rol Auth',
+      'Cloudflare R2',
+      'Edge Deploy'
     ],
     achievements: [
-      'Diseño responsive optimizado para tablets',
-      'Implementación de sistema de gestión de estado robusto',
-      'Reducción de errores en pedidos en un 95%'
+      'Sistema multi-rol (Admin / Doctor) con Supabase Auth y Row Level Security',
+      'Almacenamiento seguro de estudios médicos en Cloudflare R2 con presigned URLs',
+      'Generación de reportes clínicos en PDF y despliegue en Cloudflare Pages'
+    ]
+  },
+  {
+    title: 'Proyecto de Maestría',
+    company: 'Learning Analytics Platform',
+    location: 'Colima, Col',
+    startDate: '08/2023',
+    endDate: '07/2025',
+    isCurrent: false,
+    description: 'Plataforma educativa con analíticas de comportamiento de estudiantes en videos y transcripción automática con IA',
+    highlights: [
+      'IA Whisper + Llama',
+      'Cloudflare R2',
+      'Edge Runtime'
+    ],
+    achievements: [
+      'Transcripción automática de videos con Whisper Large V3 vía Groq API',
+      'Análisis contextual de contenido educativo con Llama 3.3 70B',
+      'Dashboard en tiempo real con métricas de visualización y eventos por estudiante'
     ]
   }
 ];

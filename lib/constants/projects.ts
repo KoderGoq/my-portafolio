@@ -1,4 +1,4 @@
-import { Zap, Sparkles, TrendingUp, Users, Award } from 'lucide-react';
+import { Zap, Sparkles, TrendingUp, Users, Shield, ScanLine, Video, BarChart2, Brain } from 'lucide-react';
 import type { Project } from '@/lib/types';
 
 export const PROJECTS: Project[] = [
@@ -22,41 +22,41 @@ export const PROJECTS: Project[] = [
     featured: true
   },
   {
-    title: 'Rezerva',
-    subtitle: 'Restaurant Booking App',
-    description: 'Aplicación móvil cross-platform para reservaciones en tiempo real con notificaciones push y gestión de mesas',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop',
-    techs: ['React Native', 'TypeScript', 'Expo', 'Node.js'],
+    title: 'DOK Imagen Dental',
+    subtitle: 'Dental Clinic Management Platform',
+    description: 'Plataforma web para clínicas dentales con gestión de pacientes, estudios radiológicos y control de acceso multi-rol',
+    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&h=600&fit=crop',
+    techs: ['Next.js', 'TypeScript', 'Supabase', 'Cloudflare', 'Cloudflare R2'],
     highlights: [
-      'Arquitectura modular escalable con Zustand',
-      'Navegación fluida con Expo Router',
-      'Sistema de notificaciones en tiempo real',
-      'UI/UX optimizada para conversión móvil'
+      'Sistema multi-rol (Admin / Doctor) con Supabase Auth y RLS',
+      'Almacenamiento de estudios médicos en Cloudflare R2 con presigned URLs',
+      'Generación de PDFs de reportes clínicos con jsPDF',
+      'Desplegado en Cloudflare Pages con Edge Runtime'
     ],
     metrics: [
-      { label: 'Descargas', value: '1K+', icon: Users },
-      { label: 'Rating', value: '4.8⭐', icon: Award },
-      { label: 'Performance', value: 'A+', icon: TrendingUp }
+      { label: 'Roles', value: '2', icon: Shield },
+      { label: 'Storage', value: 'R2', icon: ScanLine },
+      { label: 'Deploy', value: 'Edge', icon: Zap }
     ],
     featured: true
   },
   {
-    title: 'Digital Kiosk',
-    subtitle: 'Self-Service Ordering System',
-    description: 'Sistema de autoservicio para fast food con gestión de pedidos en tiempo real y reducción significativa de errores',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
-    techs: ['React', 'Prisma', 'Tailwind', 'Node.js'],
+    title: 'Learning Analytics',
+    subtitle: 'Educational Analytics Platform',
+    description: 'Plataforma de analíticas educativas que permite a profesores monitorear el comportamiento de estudiantes en videos con transcripción automática mediante IA',
+    image: 'https://images.unsplash.com/photo-1599658880436-c61792e70672?w=800&h=600&fit=crop',
+    techs: ['Next.js', 'TypeScript', 'Supabase', 'Cloudflare R2', 'Groq AI'],
     highlights: [
-      'Optimización de rutas API con Prisma ORM',
-      'Diseño responsive para tablets y pantallas táctiles',
-      'Gestión de estado robusto con Context API',
-      'Middleware para prevención de duplicados'
+      'Transcripción automática de videos con Whisper Large V3 (Groq)',
+      'Análisis contextual de contenido con Llama 3.3 70B',
+      'Dashboard para profesores con métricas de visualización y eventos',
+      'Edge Runtime en Cloudflare Pages para mínima latencia global'
     ],
     metrics: [
-      { label: 'Eficiencia', value: '+40%', icon: Zap },
-      { label: 'Conversión', value: '+25%', icon: TrendingUp },
-      { label: 'Errores', value: '-95%', icon: Award }
+      { label: 'Videos', value: 'R2', icon: Video },
+      { label: 'Análisis', value: 'LLM', icon: Brain },
+      { label: 'Analytics', value: 'Real-time', icon: BarChart2 }
     ],
-    featured: false
+    featured: true
   }
 ];
